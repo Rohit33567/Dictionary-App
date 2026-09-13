@@ -53,6 +53,7 @@ const Dictionary = () => {
             Search🔍
           </button>
         </div>
+    
 
         {loading && (
           <h2 className="text-center font-semibold mt-6 text-blue-600 animate-pulse text-xl">
@@ -60,14 +61,13 @@ const Dictionary = () => {
           </h2>
         )}
 
-        {errors && (
           <h2
             className="text-center
          font-semibold text-lg text-red-600 animate-bounce mt-6"
           >
             {errors}
           </h2>
-        )}
+        
 
         {wordData && (
           <div className="bg-indigo-300 mt-6 rounded-2xl p-6 ">
